@@ -8,7 +8,7 @@ local mg_name = minetest.get_mapgen_setting("mg_name")
 
 minetest.register_decoration({
     deco_type = "schematic",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     sidelen = 16,
 noise_params = {
 			scale = 0.01,
@@ -28,7 +28,7 @@ noise_params = {
 
 minetest.register_decoration({
     deco_type = "schematic",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     sidelen = 16,
 noise_params = {
 			scale = 0.01,
@@ -48,7 +48,7 @@ noise_params = {
 
 minetest.register_decoration({
     deco_type = "schematic",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     sidelen = 16,
 noise_params = {
 			scale = 0.01,
@@ -68,7 +68,7 @@ noise_params = {
 
 minetest.register_decoration({
     deco_type = "schematic",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     sidelen = 16,
 noise_params = {
 			scale = 0.01,
@@ -88,7 +88,7 @@ noise_params = {
 
 minetest.register_decoration({
     deco_type = "schematic",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     sidelen = 16,
 noise_params = {
 			scale = 0.01,
@@ -108,7 +108,7 @@ noise_params = {
 
 minetest.register_decoration({
     deco_type = "schematic",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     sidelen = 16,
 noise_params = {
 			scale = 0.01,
@@ -153,7 +153,7 @@ minetest.register_node("livingcaves:moss", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1, beautiflowers = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -193,7 +193,7 @@ minetest.register_node("livingcaves:lichen", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1, beautiflowers = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -215,7 +215,7 @@ minetest.register_node("livingcaves:hangingmoss", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -237,7 +237,7 @@ minetest.register_node("livingcaves:hangingmossend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -322,7 +322,7 @@ minetest.register_node("livingcaves:glowshroom", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -345,7 +345,7 @@ minetest.register_node("livingcaves:glowshroom_top", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -395,7 +395,7 @@ minetest.register_node("livingcaves:stalagmitelarge", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -418,7 +418,7 @@ minetest.register_node("livingcaves:stalagmitelargeend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -440,7 +440,7 @@ minetest.register_node("livingcaves:stalagmite", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -463,7 +463,7 @@ minetest.register_node("livingcaves:stalagmiteend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -485,7 +485,7 @@ minetest.register_node("livingcaves:stalagtite", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -508,7 +508,7 @@ minetest.register_node("livingcaves:stalagtiteend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -530,7 +530,7 @@ minetest.register_node("livingcaves:stalagtitelarge", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -553,7 +553,7 @@ minetest.register_node("livingcaves:stalagtitelargeend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, stone = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -874,7 +874,7 @@ minetest.register_node("livingcaves:water_source", {
 	liquid_viscosity = 1,
 	post_effect_color = {a = 103, r = 30, g = 60, b = 90},
 	groups = {water = 3, liquid = 3, cools_lava = 1},
-	sounds = default.node_sound_water_defaults(),
+	sounds = mcl_sounds.node_sound_water_defaults(),
 })
 
 minetest.register_node("livingcaves:water_flowing", {
@@ -922,7 +922,7 @@ minetest.register_node("livingcaves:water_flowing", {
 	post_effect_color = {a = 103, r = 30, g = 60, b = 90},
 	groups = {water = 3, liquid = 3, not_in_creative_inventory = 1,
 		cools_lava = 1},
-	sounds = default.node_sound_water_defaults(),
+	sounds = mcl_sounds.node_sound_water_defaults(),
 })
 
 minetest.register_craft({
@@ -1117,8 +1117,8 @@ bucket_cave.register_liquid(
 -- used here.
 
 bucket_cave.register_liquid(
-	"default:water_source",
-	"default:water_flowing",
+	"mcl_core:water_source",
+	"mcl_core:water_flowing",
 	"livingcaves:bucket_water",
 	"bucket_cave_water.png",
 	S"Water Bucket",
@@ -1126,8 +1126,8 @@ bucket_cave.register_liquid(
 )
 
 bucket_cave.register_liquid(
-	"default:river_water_source",
-	"default:river_water_flowing",
+	"mcl_core:river_water_source",
+	"mcl_core:river_water_flowing",
 	"livingcaves:bucket_river_water",
 	"bucket_cave_river_water.png",
 	S"River Water Bucket",
@@ -1192,7 +1192,7 @@ minetest.register_node("livingcaves:hangingmold", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1215,7 +1215,7 @@ minetest.register_node("livingcaves:hangingmoldend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1283,7 +1283,7 @@ minetest.register_node("livingcaves:bacteriacave_mold", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -1314,7 +1314,7 @@ minetest.register_node("livingcaves:bacteriacave_mold2", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -1345,7 +1345,7 @@ minetest.register_node("livingcaves:bacteriacave_mold3", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -1378,7 +1378,7 @@ minetest.register_node("livingcaves:mushroom_edible", {
       }
     }
   },
-  sounds = default.node_sound_leaves_defaults(),
+  sounds = mcl_sounds.node_sound_leaves_defaults(),
 
   after_place_node = default.after_place_leaves,
 })
@@ -1452,7 +1452,7 @@ minetest.register_node("livingcaves:rootcave_hangingroot", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1474,7 +1474,7 @@ minetest.register_node("livingcaves:rootcave_hangingroot2", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_leaves_defaults(),
+	sounds = mcl_sounds.node_sound_leaves_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1548,7 +1548,7 @@ minetest.register_node("livingcaves:rootcave_smallroot", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1, beautiflowers = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -1585,7 +1585,7 @@ minetest.register_node("livingcaves:rootcave_smallroot2", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1, beautiflowers = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -1617,7 +1617,7 @@ minetest.register_node("livingcaves:rootcave_bigroot", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1, beautiflowers = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -1649,7 +1649,7 @@ minetest.register_node("livingcaves:rootcave_bigroot2", {
 	    walkable = false,
 	    buildable_to = true,
 	    groups = {snappy = 3, flower = 1, flora = 1, attached_node = 1, flammable = 1, beautiflowers = 1},
-	    sounds = default.node_sound_leaves_defaults(),
+	    sounds = mcl_sounds.node_sound_leaves_defaults(),
 	    selection_box = {
 		    type = "fixed",
 		    fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 0.0, 4 / 16},
@@ -1673,7 +1673,7 @@ minetest.register_node("livingcaves:icestalagmitelarge", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1696,7 +1696,7 @@ minetest.register_node("livingcaves:icestalagmitelargeend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1718,7 +1718,7 @@ minetest.register_node("livingcaves:icestalagmite", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1741,7 +1741,7 @@ minetest.register_node("livingcaves:icestalagmiteend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1763,7 +1763,7 @@ minetest.register_node("livingcaves:icestalagtite", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1786,7 +1786,7 @@ minetest.register_node("livingcaves:icestalagtiteend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1808,7 +1808,7 @@ minetest.register_node("livingcaves:icestalagtitelarge", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
@@ -1831,7 +1831,7 @@ minetest.register_node("livingcaves:icestalagtitelargeend", {
 		fixed = {-6 / 16, -0.5, -6 / 16, 6 / 16, 0.5, 6 / 16},
 	},
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)

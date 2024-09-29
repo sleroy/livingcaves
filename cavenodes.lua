@@ -12,7 +12,7 @@ minetest.register_node("livingcaves:mossycaverock", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:mossycaverock",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:lichycaverock", {
@@ -21,7 +21,7 @@ minetest.register_node("livingcaves:lichycaverock", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:lichycaverock",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:mushcave_bottom", {
@@ -30,7 +30,7 @@ minetest.register_node("livingcaves:mushcave_bottom", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:mushcave_bottom",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:mushcave_bottom2", {
@@ -39,7 +39,7 @@ minetest.register_node("livingcaves:mushcave_bottom2", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:mushcave_bottom2",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:dripstonecave_bottom", {
@@ -48,7 +48,7 @@ minetest.register_node("livingcaves:dripstonecave_bottom", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:dripstonecave_bottom",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:dripstonecave_bottom2", {
@@ -57,7 +57,7 @@ minetest.register_node("livingcaves:dripstonecave_bottom2", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:dripstonecave_bottom2",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:bacteriacave_bottom", {
@@ -66,7 +66,7 @@ minetest.register_node("livingcaves:bacteriacave_bottom", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:bacteriacave_bottom",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:bacteriacave_bottom2", {
@@ -76,7 +76,7 @@ minetest.register_node("livingcaves:bacteriacave_bottom2", {
 	drop = "livingcaves:bacteriacave_bottom2",
         light_source = 4,
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:rootdirt", {
@@ -85,7 +85,7 @@ minetest.register_node("livingcaves:rootdirt", {
 	groups = {crumbly = 3, soil = 1,},
 	drop = "livingcaves:rootdirt",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:rootdirt2", {
@@ -94,7 +94,7 @@ minetest.register_node("livingcaves:rootdirt2", {
 	groups = {crumbly = 3, soil = 1,},
 	drop = "livingcaves:rootdirt2",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:icecave_ice", {
@@ -103,7 +103,7 @@ minetest.register_node("livingcaves:icecave_ice", {
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
 	drop = "livingcaves:icecave_ice",
 	legacy_mineral = true,
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 })
 
 minetest.register_node("livingcaves:icecave_ice2", {
@@ -112,7 +112,7 @@ minetest.register_node("livingcaves:icecave_ice2", {
 	groups = {cracky = 3, cools_lava = 1, slippery = 3},
 	drop = "livingcaves:icecave_ice2",
 	legacy_mineral = true,
-	sounds = default.node_sound_ice_defaults(),
+	sounds = mcl_sounds.node_sound_ice_defaults(),
 })
 
 minetest.register_node("livingcaves:bacteriacave_trapstone", {
@@ -121,7 +121,7 @@ minetest.register_node("livingcaves:bacteriacave_trapstone", {
 	groups = {choppy = 3, wood = 1},
 	drop = "livingcaves:bacteriacave_trapstone",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:bacteriacave_trapnode", {
@@ -131,7 +131,7 @@ minetest.register_node("livingcaves:bacteriacave_trapnode", {
 	walkable = false,
 	drop = "livingcaves:bacteriacave_trapnode",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:bacteriacave_poolstone", {
@@ -140,7 +140,7 @@ minetest.register_node("livingcaves:bacteriacave_poolstone", {
 	groups = {cracky = 3, stone = 1},
 	drop = "livingcaves:bacteriacave_poolstone",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:bacteriacave_nestfoot", {
@@ -149,7 +149,7 @@ minetest.register_node("livingcaves:bacteriacave_nestfoot", {
 	groups = {choppy = 3, stone = 1},
 	drop = "livingcaves:bacteriacave_nestfoot",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("livingcaves:bacteriacave_nest", {
@@ -164,13 +164,13 @@ tiles = {
         light_source = 7,
 	drop = "livingcaves:bacteriacave_nest",
 	legacy_mineral = true,
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -184,7 +184,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -198,7 +198,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -212,7 +212,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -226,7 +226,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -240,7 +240,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -254,7 +254,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -269,7 +269,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -284,7 +284,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -299,7 +299,7 @@ minetest.register_decoration({
 
 minetest.register_decoration({
     deco_type = "simple",
-    place_on = {"default:stone"},
+    place_on = {"mcl_core:stone"},
     is_ground_content = true,
     sidelen = 16,
     place_offset_y = -1,
@@ -329,7 +329,7 @@ minetest.register_node("livingcaves:spiderweb", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb2", {
@@ -349,7 +349,7 @@ minetest.register_node("livingcaves:spiderweb2", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb3", {
@@ -369,7 +369,7 @@ minetest.register_node("livingcaves:spiderweb3", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb4", {
@@ -389,7 +389,7 @@ minetest.register_node("livingcaves:spiderweb4", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb5", {
@@ -409,7 +409,7 @@ minetest.register_node("livingcaves:spiderweb5", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb6", {
@@ -429,7 +429,7 @@ minetest.register_node("livingcaves:spiderweb6", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb7", {
@@ -449,7 +449,7 @@ minetest.register_node("livingcaves:spiderweb7", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb8", {
@@ -469,7 +469,7 @@ minetest.register_node("livingcaves:spiderweb8", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
 minetest.register_node("livingcaves:spiderweb9", {
@@ -489,6 +489,6 @@ minetest.register_node("livingcaves:spiderweb9", {
 	walkable = false,
 	climbable = false,
 	groups = {crumbly = 3, sand = 1, liquid = 3, disable_jump = 1},
-	sounds = default.node_sound_sand_defaults()
+	sounds = mcl_sounds.node_sound_sand_defaults()
 })
 
