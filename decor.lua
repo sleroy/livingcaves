@@ -1380,7 +1380,7 @@ minetest.register_node("livingcaves:mushroom_edible", {
   },
   sounds = mcl_sounds.node_sound_leaves_defaults(),
 
-  after_place_node = default.after_place_leaves,
+  
 })
 
 minetest.register_decoration({

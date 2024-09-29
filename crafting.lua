@@ -51,7 +51,7 @@ minetest.register_craft({
       mcl_sounds.node_sound_wood_defaults()
     )
 
-  mcl_doors.register_fencegate(
+  mcl_fences.register_fence_and_fence_gate_def(
     "livingcaves:gate_root_wood",
     {
       description = S("Root Fence Gate"),
@@ -91,10 +91,18 @@ mcl_fences.register_fence_def(
 --   }
 -- )
 
-mcl_doors.register( "door_livingcaves_root", {
-	tiles = { { name = "livingcaves_door_rootdirt.png", backface_culling = true } },
+mcl_doors:register_door( "door_livingcaves_root", {
+	tiles_bottom = {"livingcaves_door_rootdirt.png","livingcaves_door_rootdirt.png"},
+	tiles_top = {"livingcaves_door_rootdirt.png","livingcaves_door_rootdirt.png"},
 	description = S"Root Door",
 	inventory_image = "livingcaves_door_rootdirt_inv.png",
+	_mcl_hardness = 5,
+	_mcl_blast_resistance = 5,
+	sounds = mcl_sounds.node_sound_metal_defaults(),
+	sound_open = "doors_steel_door_open",
+	sound_close = "doors_steel_door_close",
+
+
 	groups = { choppy = 2, oddly_breakable_by_hand = 2, flammable = 2 },
 	recipe = {
 		{ "livingcaves:root_wood", "livingcaves:root_wood", "livingcaves:root_wood" },
@@ -103,7 +111,8 @@ mcl_doors.register( "door_livingcaves_root", {
 	}
 } )
 
-mcl_doors.register_trapdoor("livingcaves:root_trapdoor", {
+
+mcl_doors:register_trapdoor("livingcaves:root_trapdoor", {
 	description = S("Root Trapdoor"),
 	inventory_image = "livingcaves_roottrapdoor.png",
 	wield_image = "livingcaves_roottrapdoor.png",
@@ -169,7 +178,7 @@ minetest.register_craft({
 
 --- ice
 
-mcl_walls.register(":livingcaves:icebrick_wall", S"Ice Brick Wall", "livingcaves_icecbricks.png",
+mcl_walls.register_wall(":livingcaves:icebrick_wall", S"Ice Brick Wall", "livingcaves_icecbricks.png",
 		"livingcaves:icebrick_wall", mcl_sounds.node_sound_stone_defaults())
 
     mcl_stairs.register_stair_and_slab(
@@ -230,23 +239,24 @@ mcl_fences.register_fence_def(
   }
 )
 
-default.register_fence_rail(
-  "livingcaves:fence_rail_ice",
-  {
-    description = S("Ice Fence Rail"),
-    texture = "livingcaves_ice_fencewood.png",
-    inventory_image = "default_fence_rail_overlay.png^livingcaves_ice_fencewood.png^" ..
-      "default_fence_rail_overlay.png^[makealpha:255,126,126",
-    wield_image = "default_fence_rail_overlay.png^livingcaves_ice_fencewood.png^" ..
-      "default_fence_rail_overlay.png^[makealpha:255,126,126",
-    material = "livingcaves:icebrick",
-	groups = {cracky = 3, stone = 2},
-	sounds = mcl_sounds.node_sound_ice_defaults(),
-  }
-)
+-- default.register_fence_rail(
+--   "livingcaves:fence_rail_ice",
+--   {
+--     description = S("Ice Fence Rail"),
+--     texture = "livingcaves_ice_fencewood.png",
+--     inventory_image = "default_fence_rail_overlay.png^livingcaves_ice_fencewood.png^" ..
+--       "default_fence_rail_overlay.png^[makealpha:255,126,126",
+--     wield_image = "default_fence_rail_overlay.png^livingcaves_ice_fencewood.png^" ..
+--       "default_fence_rail_overlay.png^[makealpha:255,126,126",
+--     material = "livingcaves:icebrick",
+-- 	groups = {cracky = 3, stone = 2},
+-- 	sounds = mcl_sounds.node_sound_ice_defaults(),
+--   }
+-- )
 
-mcl_doors.register( "door_livingcaves_ice", {
-	tiles = { { name = "livingcaves_door_ice.png", backface_culling = true } },
+mcl_doors:register_door( "door_livingcaves_ice", {
+	tiles_bottom = {"livingcaves_door_ice.png","livingcaves_door_ice.png"},
+	tiles_top = {"livingcaves_door_ice.png","livingcaves_door_ice.png"},
 	description = S"Ice Door",
 	inventory_image = "livingcaves_door_ice_inv.png",
 	groups = {cracky = 3, stone = 2},
@@ -260,7 +270,7 @@ mcl_doors.register( "door_livingcaves_ice", {
 	}
 } )
 
-mcl_doors.register_trapdoor("livingcaves:ice_trapdoor", {
+mcl_doors:register_trapdoor("livingcaves:ice_trapdoor", {
 	description = S("Ice Trapdoor"),
 	inventory_image = "livingcaves_icetrapdoor.png",
 	wield_image = "livingcaves_icetrapdoor.png",
@@ -285,7 +295,7 @@ minetest.register_craft({
 
 --- dripstone
 
-mcl_walls.register(":livingcaves:dripstonebrick_wall", S"Dripstone Brick Wall", "livingcaves_dripstonecave_bricks.png",
+mcl_walls.register_wall(":livingcaves:dripstonebrick_wall", S"Dripstone Brick Wall", "livingcaves_dripstonecave_bricks.png",
 		"livingcaves:dripstonebrick_wall", mcl_sounds.node_sound_stone_defaults())
 
     mcl_stairs.register_stair_and_slab(
@@ -333,8 +343,9 @@ minetest.register_craft({
 	
 })
 
-mcl_doors.register( "door_livingcaves_dripstone", {
-	tiles = { { name = "livingcaves_door_dripstone.png", backface_culling = true } },
+mcl_doors:register_door( "door_livingcaves_dripstone", {
+	tiles_bottom = {"livingcaves_door_dripstone.png","livingcaves_door_dripstone.png"},
+	tiles_top = {"livingcaves_door_dripstone.png","livingcaves_door_ice.png"},
 	description = S"Dripstone Door",
 	inventory_image = "livingcaves_door_dripstone_inv.png",
 	groups = {cracky = 3, stone = 2},
@@ -348,7 +359,7 @@ mcl_doors.register( "door_livingcaves_dripstone", {
 	}
 } )
 
-mcl_doors.register_trapdoor("livingcaves:dripstone_trapdoor", {
+mcl_doors:register_trapdoor("livingcaves:dripstone_trapdoor", {
 	description = S("Dripstone Trapdoor"),
 	inventory_image = "livingcaves_dripstonetrapdoor.png",
 	wield_image = "livingcaves_dripstonetrapdoor.png",
@@ -373,7 +384,7 @@ minetest.register_craft({
 
 --- mushroom
 
-mcl_walls.register(":livingcaves:mossybrick_wall", S"Mossy Brick Wall", "livingcaves_mushcave_mossybricks.png",
+mcl_walls.register_wall(":livingcaves:mossybrick_wall", S"Mossy Brick Wall", "livingcaves_mushcave_mossybricks.png",
 		"livingcaves:mossybrick_wall", mcl_sounds.node_sound_stone_defaults())
 
     mcl_stairs.register_stair_and_slab(
