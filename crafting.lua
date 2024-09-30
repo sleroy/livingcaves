@@ -180,7 +180,7 @@ minetest.register_craft({
 
 --- ice
 
-mcl_walls.register_wall(":livingcaves:icebrick_wall", S "Ice Brick Wall", {"livingcaves_icecbricks.png"},
+mcl_walls.register_wall(":livingcaves:icebrick_wall", S "Ice Brick Wall", {"livingcaves_icecbricks.png"},"livingcaves_icecbricks.png",
 	"livingcaves:icebrick_wall", mcl_sounds.node_sound_stone_defaults())
 
 mcl_stairs.register_stair_and_slab(
@@ -300,7 +300,7 @@ minetest.register_craft({
 --- dripstone
 
 mcl_walls.register_wall(":livingcaves:dripstonebrick_wall", S "Dripstone Brick Wall",
-	{"livingcaves_dripstonecave_bricks.png"},
+	{"livingcaves_dripstonecave_bricks.png"},"livingcaves_dripstonecave_bricks.png",
 	"livingcaves:dripstonebrick_wall", mcl_sounds.node_sound_stone_defaults())
 
 mcl_stairs.register_stair_and_slab(
@@ -389,7 +389,7 @@ minetest.register_craft({
 
 --- mushroom
 
-mcl_walls.register_wall(":livingcaves:mossybrick_wall", S "Mossy Brick Wall", {"livingcaves_mushcave_mossybricks.png"},
+mcl_walls.register_wall(":livingcaves:mossybrick_wall", S "Mossy Brick Wall", {"livingcaves_mushcave_mossybricks.png"},"livingcaves_mushcave_mossybricks.png",
 	"livingcaves:mossybrick_wall", mcl_sounds.node_sound_stone_defaults())
 
 mcl_stairs.register_stair_and_slab(
