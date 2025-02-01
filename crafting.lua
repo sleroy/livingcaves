@@ -494,7 +494,7 @@ minetest.register_craft({
 --- spider web to string
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb9", "livingcaves:spiderweb9" }
@@ -502,7 +502,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb8", "livingcaves:spiderweb8" }
@@ -510,7 +510,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb7", "livingcaves:spiderweb7" }
@@ -518,7 +518,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb6", "livingcaves:spiderweb6" }
@@ -526,7 +526,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb5", "livingcaves:spiderweb5" }
@@ -534,7 +534,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb4", "livingcaves:spiderweb4" }
@@ -542,7 +542,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb3", "livingcaves:spiderweb3" }
@@ -550,7 +550,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb2", "livingcaves:spiderweb2" }
@@ -558,7 +558,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mcl_farming:string",
+	output = "mcl_mobitems:string",
 	type = "shapeless",
 	recipe =
 	{ "livingcaves:spiderweb", "livingcaves:spiderweb" }

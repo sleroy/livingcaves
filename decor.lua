@@ -928,7 +928,7 @@ minetest.register_node("livingcaves:water_flowing", {
 minetest.register_craft({
 	output = 'livingcaves:bucket_empty 1',
 	recipe = {
-		{'default_steel_ingot', '', 'livingcaves:dripstonecave_bottom'},
+		{'default:steel_ingot', '', 'livingcaves:dripstonecave_bottom'},
 		{'', 'group:wood', ''},
 	}
 })
